@@ -2,6 +2,7 @@ window.addEventListener('load',()=>{
     const form = document.querySelector("#new-form");
     const input = document.querySelector("#input");
     const Li = document.querySelector("#tasks");
+    const List_el = document.querySelector("#complete")
 
     form.addEventListener('submit',(e) =>{
         e.preventDefault();
@@ -44,10 +45,16 @@ window.addEventListener('load',()=>{
 
         input.value= "";
 
+        const task_complete_el = document.createElement("div");
+        task_complete_el.classList.add("complete");
+
         task_done_el.addEventListener('click',() =>{
             // if(confirm("Are you sure?")){
             //     Li.removeChild(task_el);
             // }
+            // Li.removeChild(task_el);
+            task_complete_el.innerHTML = task;
+            List_el.appendChild(task_complete_el);
             Li.removeChild(task_el);
         })
     });
