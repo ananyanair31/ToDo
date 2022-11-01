@@ -1,0 +1,91 @@
+body{
+    background-color: #404258;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+}
+header{
+    margin: 10px auto;
+    padding: 0;
+    width: 90%;
+    display:block;
+    text-align: center;
+    /* font-size: 18px; */
+}
+ 
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#input{
+    border: 2px solid #474E68;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #50577A;
+    color: white;
+    width: 40%;
+}
+#input::placeholder{
+    color: #6B728E;
+}
+#Submit{
+    border: 2px solid #474E68;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #50577A;
+    color: grey;
+} 
+#submit::placeholder{
+    color: #6B728E;
+}
+.task-list{
+    margin: 0 auto;
+    padding: 0;
+    width: 40%;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    font-size: 18px;
+    border: 2px dotted #6B728E;
+    border-radius: 10px;
+}
+.task-list h2{
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#50577A;
+    /* color: white; */
+    border-radius: 10px;
+    margin: 3px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 80%;
+}
+#tasks .task .content .text{
+    color: white;
+    /* text-align: center; */
+}
+
+#tasks .task .actions{
+    float: left;
+    background-color: #6B728E;
+    color: white;
+    border: 1px solid #474E68;
+    border-radius: 10px;
+}
+
+#tasks .task .actions .done{
+    color: white;
+}
